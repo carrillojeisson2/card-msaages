@@ -1,40 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Card-messaged
 
-First, run the development server:
+Aplicacion para crear mensajes personalizado utilizando inteligencia artificial
+
+
+## Setup del proyecto
+
+Clonamos el proyecto
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+    git clone https://github.com/carrillojeisson2/card-msaages.git
+```
+    
+## Vamos a la carpeta del proyecto
+
+cd  card-messages
+
+```bash
+  npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Arrancamos el servidor local
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+  npm run dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Respuesta por consola
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+  http://localhost:3000/
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Abrir el proyecto en el navegador utilizando la url
 
-## Learn More
+```bash
+  http://localhost:3000/
+```
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Input
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+En el capo para ingresar texto podra solicitar cualquier tipo de mensaje para cualquier persona
+siempre y cuando incluya el texto "para + el nombre de la persona"
 
-## Deploy on Vercel
+ejemplo: mensaje de cumpleaños para sofia
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Generar mensaje
+Despues de ingresar la solicitud podra precionar en le boton  "Generar Mensaje" para obtener el mensaje
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## View Details
+Despues de obtenr el mensaje podra ver un nuevo boton con el texto "View Details" para ver datos sobre el desarrollador.
+Esta accion lo redireccionara a una nueva pagina dentro de la aplicacion en donde encontrara un mensaje del desarrolador junto a un boton de cv para mas informa
+
+
+
