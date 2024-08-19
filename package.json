@@ -1,0 +1,23 @@
+{
+  "name": "card-messages",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "formik": "^2.2.9",
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.2.5",
+    "sass": "^1.58.2",
+    "semantic-ui-css": "^2.1.4",
+    "semantic-ui-react": "^2.1.4",
+    "yup": "^1.0.0",
+    "openai": "^4.56.0"
+
+  }
+}

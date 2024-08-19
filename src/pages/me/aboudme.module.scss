@@ -1,0 +1,43 @@
+@import "~/src/scss/index.scss";
+
+
+.container {
+    max-width: 90%;
+    background-color: #2C2C2E;
+    color: $text-primary;
+    margin: 0 auto;
+    margin-top: 5%;
+    border-radius: 10px;
+
+
+    .details {
+        padding-top: 5px;
+        margin-left: 2%;
+        margin-right: 2%;
+
+        padding-bottom: 20px;
+        font-size: 20px;
+
+    }
+
+}
+.me{
+    background-color: #2C2C2E;
+    margin: 0 auto;
+    width: 10%;
+    margin-top: 10px;
+    padding-top: 6px;
+    border-radius: 10px;
+    text-align: center;
+    height: 34px;
+    border: none;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+
+   
+}
+
+.me:hover {
+    background-color: $hover-primary-button; 
+    transform: scale(1.00);
+}

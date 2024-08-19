@@ -1,0 +1,207 @@
+@import "~/src/scss/index.scss";
+
+.container {
+ 
+
+    display:  grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    margin-bottom: 15px;
+
+    .formulario {
+        grid-column: 2 / 4;
+        grid-row: 1;
+
+        button {
+            width: 100%;
+            height: 43px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            color: $text-primary;
+            background-color: $primary-button;
+            border: none;
+        }
+    } 
+ }
+
+  
+
+ .formulario {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    width: 50%;
+    margin: 0 auto;
+
+    button {
+        
+        height: 43px;
+        width: 100%;
+
+        margin-bottom: 10px;
+        border-radius: 5px;
+        color: $text-primary;
+        background-color: $primary-button;
+        border: none;
+        cursor: pointer; 
+        transition: background-color 0.3s ease, transform 0.3s ease; 
+    }
+
+    button:hover {
+      background-color: $hover-primary-button; 
+      transform: scale(1.00);
+  }
+}
+
+
+ .spinner {
+    border: 8px solid $text-primary; 
+    border-top: 8px solid #3498db; 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+
+
+  .response {
+    display:  grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(20px, auto);
+    background-color: $primary-background;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-align: left;
+    margin-bottom: 15px;
+
+   
+
+   
+    .para {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    .mensaje {
+        grid-column: 1 / 4;
+        grid-row: 2;
+        text-align: left;
+        margin-left: 15px;
+
+    }
+
+    .de {
+        grid-column: 1 / 4;
+        grid-row: 3;
+        text-align: left;
+        margin-left: 15px;
+
+    }
+  }
+
+  .aboutme{
+    background-color: $primary-button;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    border: none;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+
+  
+
+    a {
+        color: $text-primary;
+        margin-top: 50%;
+        
+    }
+}
+
+.aboutme:hover {
+  background-color: $hover-primary-button; 
+  transform: scale(1.00);
+}
+
+
+
+// ------------
+
+
+
+@media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr; 
+    }
+  
+    .formulario {
+      grid-column: 1 / -1;
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .response {
+      grid-template-columns: 1fr; 
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+  
+      .para,
+      .mensaje,
+      .de {
+        grid-column: 1 / -1; 
+      }
+    }
+  
+    .aboutme,
+    .abouttu {
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 10px; 
+      height: auto; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      grid-gap: 5px; 
+    }
+  
+    .formulario {
+      button {
+        height: 40px; 
+      }
+    }
+  
+    .spinner {
+      width: 40px;
+      height: 40px; 
+    }
+  
+    .aboutme {
+      padding-top: 5px; 
+    }
+
+    .yuno{
+        padding-top: 10px;
+    }
+  }
+
+
