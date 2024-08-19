@@ -1,5 +1,5 @@
 
-# Card-messaged
+# Card-messages
 
 Aplicacion para crear mensajes personalizado utilizando inteligencia artificial
 
